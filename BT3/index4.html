@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function studen(a,b,c,d,e){
+            this.id = a;
+            this.name = b;
+            this.gender = c;
+            this.age = d;
+            this.mark = e;
+        }
+        let studenA  = new studen(1,"nguyen van A","nam",20,8);
+        console.log(studenA);
+        let StudenB = new studen(2,"nguyen van b","nu",23,7)
+        console.log(StudenB);
+        let StudenC = new studen(3,"nguyen van c","nu",23,9)
+        console.log(StudenC);
+        let StudenD = new studen(4,"nguyen van d","nu",23,6)
+        console.log(StudenD);
+        let studens =[];
+        studens.push(studenA,StudenB,StudenC,StudenD);
+        let total = 0;
+        for(let i=0;i<studens.length;i++){
+            total += studens[i].mark
+        }
+        let TBC = total/studens.length  
+        console.log(TBC);
+        TBC > 7.5 ? console.log("lop kha") : TBC > 5? console.log("lop trung binh"):console.log("lop yeu"); 
+    </script>
+</body>
+</html>

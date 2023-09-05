@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function studen(a,b,c,d,e){
+            this.id = a;
+            this.name = b;
+            this.gender = c;
+            this.age = d;
+            this.mark = e
+        }
+        let studenA  = new studen(1,"nguyen van A","nam",20,8);
+        console.log(studenA);
+        let StudenB = new studen(2,"nguyen van b","nu",23,7)
+        console.log(StudenB);
+        let studens =[];
+        studens.push(studenA,StudenB);
+        console.log(studens[0].name);
+    </script>
+</body>
+</html>
